@@ -8,11 +8,13 @@ body {
   justify-content: space-between;
 }
 .sun{
-  background-color: white;
+  width: 120px;
+  height: 120px;
 }
-.sun.on {
-background-color: yellow;
+.sun.off{
+  background-color: rgb(227, 227, 20); 
 }
+ 
 .menu {
   width: 250px;
   height: 500px;
