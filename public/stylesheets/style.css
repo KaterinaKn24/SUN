@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+.sun{
+  background-color: white;
+}
+.sun.on {
+background-color: yellow;
+}
+.menu {
+  width: 250px;
+  height: 500px;
+  border: solid 1px #180707;
+  
+}
+.btns {
+  padding-left: 10px;
+  padding-top: 10px;
+}
