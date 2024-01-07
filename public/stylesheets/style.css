@@ -1,27 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
 .box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+ 
 }
+
 .sun{
   width: 120px;
   height: 120px;
+  display: flex;
+  justify-content: center;
 }
-.sun.off{
-  background-color: rgb(227, 227, 20); 
-}
- 
 .menu {
   width: 250px;
   height: 500px;
   border: solid 1px #180707;
+  margin-left: 300px;
+
   
 }
 .btns {
   padding-left: 10px;
   padding-top: 10px;
+}
+.wkl {
+  width: 80px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.wkl:hover {
+  background-color: rgb(75, 56, 249);
+  color: rgb(233, 233, 13);
+  transition: all 0.24s ease-in;
 }
