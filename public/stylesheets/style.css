@@ -9,7 +9,7 @@ body {
 }
 .box {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
  
 }
 
@@ -18,12 +18,18 @@ body {
   height: 120px;
   display: flex;
   justify-content: center;
+  background-image: rgb(206, 206, 48);
+  position: relative;
+  }
+.sun.left {
+  position: relative;
+  left: 40px;
 }
 .menu {
   width: 250px;
   height: 500px;
   border: solid 1px #180707;
-  margin-left: 300px;
+  
 
   
 }
@@ -40,6 +46,35 @@ body {
   cursor: pointer;
 }
 .wkl:hover {
+  background-color: rgb(75, 56, 249);
+  color: rgb(233, 233, 13);
+  transition: all 0.24s ease-in;
+}
+.butns {
+  padding-top: 10px;
+}
+.lft {
+  width: 80px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.lft:hover {
+  background-color: rgb(75, 56, 249);
+  color: rgb(233, 233, 13);
+  transition: all 0.24s ease-in;
+}
+.rght {
+  width: 80px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.rght:hover {
   background-color: rgb(75, 56, 249);
   color: rgb(233, 233, 13);
   transition: all 0.24s ease-in;
