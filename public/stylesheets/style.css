@@ -19,11 +19,25 @@ body {
   display: flex;
   justify-content: center;
   background-image: rgb(206, 206, 48);
+  border: 1px solid rgb(238, 157, 7);
   position: relative;
+  border-radius: 50%;
   }
 .sun.left {
   position: relative;
   left: 40px;
+}
+.sun.left1 {
+  position: relative;
+  left: 40px;
+}
+.sun.left2 {
+  position: relative;
+  left: 40px;
+}
+.sun.right {
+  position: relative;
+  right: 40px;
 }
 .menu {
   width: 250px;
