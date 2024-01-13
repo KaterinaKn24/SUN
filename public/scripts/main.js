@@ -17,14 +17,29 @@ const rght = document.getElementById('right');
 
 const colors = [ "white", "rgb(206, 206, 48)" ];
 
-//const pozLeft = [ 'left', 'left1', 'left2'];
+const pozLeft = [ 
+    {name: 'left'},
+    {name: 'left1'},
+    {name: 'left2'},
+];
 
 button.addEventListener('click', () => {
 sunn.style.backgroundColor = colors [getRandomNumber()];
 });
 
+let poz = 3;
+
 lft.addEventListener('click', () => {
-    sunn.classList.add('left');
+    //sunn.classList.add('left');
+    if ( poz > 1) {
+        sunn.classList.add('left');
+    }
+    if ( poz < 1 ) {
+        sunn.classList.add('left1');
+    }
+    if ( poz === 1) {
+        sunn.classList.add('left2');
+    }
 });
 
 rght.addEventListener('click', () => {
@@ -35,7 +50,7 @@ function getRandomNumber() {
 };
 
 //function getRandomNumberLeft() {
-   // return Math.floor(Math.random() * pozLeft.length);
+   //return Math.floor(Math.random() * pozLeft.length);
 //};
 
 //function setScrollToLeft() {

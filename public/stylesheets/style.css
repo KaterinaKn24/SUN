@@ -9,7 +9,7 @@ body {
 }
 .box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
  
 }
 
@@ -19,25 +19,26 @@ body {
   display: flex;
   justify-content: center;
   background-image: rgb(206, 206, 48);
+  margin-left: 500px;
   border: 1px solid rgb(238, 157, 7);
   position: relative;
   border-radius: 50%;
   }
 .sun.left {
   position: relative;
-  left: 40px;
+  left: 100px;
 }
 .sun.left1 {
   position: relative;
-  left: 40px;
+  left: 100px;
 }
 .sun.left2 {
   position: relative;
-  left: 40px;
+  left: 100px;
 }
 .sun.right {
   position: relative;
-  right: 40px;
+  right: 100px;
 }
 .menu {
   width: 250px;
@@ -92,4 +93,40 @@ body {
   background-color: rgb(75, 56, 249);
   color: rgb(233, 233, 13);
   transition: all 0.24s ease-in;
+}
+.sve {
+  width: 80px;
+  height: 30px;
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.sve:hover {
+  background-color: rgb(75, 56, 249);
+  color: rgb(233, 233, 13);
+  transition: all 0.24s ease-in;
+}
+.boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-right:300px;
+
+}
+.box1 {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgb(12, 221, 12);
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  border: 3px solid rgb(204, 222, 8);
+}
+.box3 {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgb(12, 221, 12);
 }
