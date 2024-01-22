@@ -17,33 +17,38 @@ const rght = document.getElementById('right');
 
 const colors = [ "white", "rgb(206, 206, 48)" ];
 
-const pozLeft = [ 
-    {name: 'left'},
-    {name: 'left1'},
-    {name: 'left2'},
-];
 
 button.addEventListener('click', () => {
 sunn.style.backgroundColor = colors [getRandomNumber()];
 });
 
-let poz = 3;
+const sunMove = {
+    size: 5,
+    step: 50,
+    cur: 0
+}
 
 lft.addEventListener('click', () => {
-    //sunn.classList.add('left');
-    if ( poz > 1) {
-        sunn.classList.add('left');
+    if ( sunMove.cur === 0) {
+        return;
     }
-    if ( poz < 1 ) {
-        sunn.classList.add('left1');
-    }
-    if ( poz === 1) {
-        sunn.classList.add('left2');
-    }
+    
+    sunMove.cur-=1;
+    const coord = sunMove.cur * sunMove.step; 
+    
+    sunn.style.left = `${coord}px`;
+    
 });
 
 rght.addEventListener('click', () => {
-    sunn.classList.add('right');
+    if(sunMove.cur === sunMove.size - 1) {
+        return;
+    }
+
+    sunMove.cur+=1;
+    const coord = sunMove.cur * sunMove.step; 
+  
+    sunn.style.left = `${coord}px`;
 });
 function getRandomNumber() {
     return Math.floor(Math.random() * colors.length);

@@ -10,34 +10,33 @@ body {
 .box {
   display: flex;
   justify-content: space-between;
+  position: relative;
  
 }
-
 .sun{
   width: 120px;
   height: 120px;
+  background-image: rgb(206, 206, 48);
+  border: 1px solid rgb(238, 157, 7);
   display: flex;
   justify-content: center;
-  background-image: rgb(206, 206, 48);
-  margin-left: 500px;
-  border: 1px solid rgb(238, 157, 7);
-  position: relative;
   border-radius: 50%;
+
   }
 .sun.left {
-  position: relative;
+  position: absolute;
   left: 100px;
 }
 .sun.left1 {
-  position: relative;
+  position: absolute;
   left: 100px;
 }
 .sun.left2 {
-  position: relative;
+  position: absolute;
   left: 100px;
 }
 .sun.right {
-  position: relative;
+  position: absolute;
   right: 100px;
 }
 .menu {
