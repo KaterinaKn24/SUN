@@ -13,13 +13,16 @@ body {
   position: relative;
  
 }
+.sun-box {
+  position: relative;
+}
 .sun{
   width: 120px;
   height: 120px;
   background-image: rgb(206, 206, 48);
   border: 1px solid rgb(238, 157, 7);
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  left: 500px;
   border-radius: 50%;
 
   }

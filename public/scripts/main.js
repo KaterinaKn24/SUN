@@ -25,11 +25,12 @@ sunn.style.backgroundColor = colors [getRandomNumber()];
 const sunMove = {
     size: 5,
     step: 50,
+    start: 500,
     cur: 0
 }
 
 lft.addEventListener('click', () => {
-    if ( sunMove.cur === 0) {
+    if ( sunMove.cur === sunMove.Move.start) {
         return;
     }
     
@@ -41,7 +42,7 @@ lft.addEventListener('click', () => {
 });
 
 rght.addEventListener('click', () => {
-    if(sunMove.cur === sunMove.size - 1) {
+    if(sunMove.cur === sunMove.start - 1) {
         return;
     }
 
