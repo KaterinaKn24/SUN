@@ -25,12 +25,12 @@ sunn.style.backgroundColor = colors [getRandomNumber()];
 const sunMove = {
     size: 5,
     step: 50,
-    start: 500,
+    
     cur: 0
 }
 
 lft.addEventListener('click', () => {
-    if ( sunMove.cur === sunMove.Move.start) {
+    if ( sunMove.cur === 0) {
         return;
     }
     
